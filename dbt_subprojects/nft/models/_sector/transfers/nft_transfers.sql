@@ -8,7 +8,7 @@
         incremental_strategy = 'merge',
         incremental_predicates = [incremental_predicate('DBT_INTERNAL_DEST.block_time')],
         unique_key = ['tx_hash', 'evt_index', 'token_id', 'amount'],
-        post_hook='{{ expose_spells(\'["ethereum", "bnb", "avalanche_c", "gnosis", "optimism", "arbitrum", "polygon", "fantom", "goerli", "base", "celo", "zksync", "zora", "scroll", "linea", "blast", "mantle"]\',
+        post_hook='{{ expose_spells(\'["ethereum", "bnb", "avalanche_c", "gnosis", "optimism", "arbitrum", "polygon", "fantom", "goerli", "base", "celo", "zksync", "zora", "scroll", "linea"]\',
                                     "sector",
                                     "nft",
                                     \'["hildobby", "0xRob", "rantum","petertherock"]\') }}'
